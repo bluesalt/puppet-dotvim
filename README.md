@@ -1,6 +1,8 @@
 This is puppet module to deploy my own [.vim](https://github.com/bluesalt/DOTVim).
 
-To install it with puppet 
+Install it with standalone puppet without puppet master server
 ```
-puppet apply tests/init.pp
+git clone https://github.com/bluesalt/puppet-dotvim.git dotvim
+cd dotvim
+puppet apply tests/init.pp --modulepath=..
 ```
